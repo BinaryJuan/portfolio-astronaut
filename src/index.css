@@ -1,13 +1,52 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* SpaceGrotesk font-family import */
+@font-face {
+    font-family: 'SpaceGroteskLight';
+    src: local('SpaceGrotesk-Light'),
+    url('./fonts/space-grotesk/SpaceGrotesk-Light.ttf') format('truetype');
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+    font-family: 'SpaceGroteskMedium';
+    src: local('SpaceGrotesk-Medium'),
+    url('./fonts/space-grotesk/SpaceGrotesk-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'SpaceGroteskRegular';
+    src: local('SpaceGrotesk-Regular'),
+    url('./fonts/space-grotesk/SpaceGrotesk-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'SpaceGroteskBold';
+    src: local('SpaceGrotesk-Bold'),
+    url('./fonts/space-grotesk/SpaceGrotesk-Bold.ttf') format('truetype');
+}
+
+/* General */
+html, body {
+    margin: 0;
+    scroll-behavior: smooth;
+    user-select: none;
+    cursor: url('../public/media/pizza-slice.png') 25 15, auto;
+}
+
+html {
+    scrollbar-width: none;
+}
+
+a:hover {
+    cursor: url('../public/media/pizza-slice.png') 25 15, auto;
+}
+
+button:hover {
+    cursor: url('../public/media/pizza-slice.png') 25 15, auto;
+}
+
+span:hover {
+    cursor: url('../public/media/pizza-slice.png') 25 15, auto;
+}
+
+body::-webkit-scrollbar {
+    display: none;
 }

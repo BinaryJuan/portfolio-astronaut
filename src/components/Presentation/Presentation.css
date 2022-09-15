@@ -1,0 +1,80 @@
+.pContainer {
+    background-image: url('../../../public/media/background.png');
+    transform: rotate(180deg);
+    background-size: contain;
+    min-height: 800px;
+    height: auto;
+}
+
+.pFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(180deg);
+    padding: 50px;
+}
+
+.fElement {
+    width: 50%;
+}
+
+.pImage {
+    width: 450px;
+    margin-left: 20%;
+    animation: floating-action 4s infinite;
+}
+
+.pText {
+    font-family: 'SpaceGroteskMedium';
+    color: #FFFFFF;
+    text-align: right;
+    width: 65%;
+    font-size: 1.6rem;
+    margin-left: 20%;
+}
+
+@keyframes floating-action {
+    0% {transform: rotate(0deg);}
+    50% {transform: rotate(10deg);}
+    100% {transform: rotate(0deg);}
+}
+
+@media ((min-width: 900px) and (max-width: 1200px)) {
+    .pImage {
+        margin-left: 0;
+    }
+
+    .pText {
+        width: 75%;
+        font-size: 1.5rem;
+    }
+}
+
+@media ((min-width: 400px) and (max-width: 900px)) {
+    .pContainer {
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-items: flex-start;
+    }
+
+    .fImg {
+        display: none;
+    }
+
+    .fElement {
+        width: 80%;
+    }
+
+    .pFlex {
+        padding: 0 0 350px 0;
+    }
+
+    .pText {
+        width: 100%;
+        text-align: center;
+        font-size: 1.5rem;
+        margin: 0;
+    }
+}

@@ -1,0 +1,41 @@
+.cContainer h2 {
+    color: black;
+    padding-right: 6vw;
+}
+
+.cContainer h3 {
+    padding-left: 5.7vw;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: 'SpaceGroteskBold';
+    font-size: 1.3rem;
+}
+
+.socialFlex {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    margin-left: 6vw;
+}
+
+.sFlexElement {
+    background-color: #000000;
+    width: 75px;
+    height: 75px;
+    margin-right: 25px;
+    border-radius: .7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+.groundSurface {
+    background-image: url('../../../public/media/earth.png');
+    height: 350px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 800px;
+}

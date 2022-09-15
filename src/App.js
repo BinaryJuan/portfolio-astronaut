@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+// Setup
 
-function App() {
+// Styles
+import './index.css'
+//Components
+import Header from './components/Header/Header';
+import Presentation from './components/Presentation/Presentation';
+import FadeContainer from './components/FadeContainer/FadeContainer';
+// Fonts - SpaceGrotesk (local)
+import './fonts/space-grotesk/SpaceGrotesk-Light.ttf'
+import './fonts/space-grotesk/SpaceGrotesk-Medium.ttf'
+import './fonts/space-grotesk/SpaceGrotesk-Regular.ttf'
+import './fonts/space-grotesk/SpaceGrotesk-Bold.ttf'
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <Header />
+      <Presentation />
+      <FadeContainer />
     </div>
   );
 }

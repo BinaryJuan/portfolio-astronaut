@@ -1,0 +1,53 @@
+.ppContainer h2 {
+    color: black;
+    text-align: end;
+    padding-right: 6vw;
+}
+
+.ppContainer h3 {
+    text-align: end;
+    padding-right: 6vw;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: 'SpaceGroteskBold';
+    font-size: 1.3rem;
+}
+
+.spanPurple {
+    color: #e512ec;
+    cursor: pointer;
+}
+
+.ppFlex {
+    display: flex;
+    width: 100%;
+    height: auto;
+    align-items: center;
+}
+
+.ppFlexImgMoon {
+    animation: rotation360 50s linear infinite;
+}
+
+.ppFlexImgMeteors {
+    margin-left: 10vw;
+    animation: floating 7s infinite;
+}
+
+.ppFlexImgRocket {
+    width: 70px;
+    height: 70px;
+    margin-left: 20vw;
+    margin-top: -150px;
+    animation: rocketFlying 10s ease-in-out infinite;
+}
+
+@keyframes rotation360 {
+    0% {transform: rotate(360deg);}
+}
+
+@keyframes rocketFlying {
+    0% {transform: rotate(320deg);}
+    50% {transform: translateX(-63vw) rotateZ(470deg);}
+    100% {transform: translateX(0) rotate(320deg);}
+}
