@@ -1,5 +1,6 @@
 import './NavBar.css'
 import { Link } from 'react-scroll'
+import { faWindows } from '@fortawesome/free-brands-svg-icons';
 
 const getScrollPercent = () => {
     let h = document.documentElement, 
@@ -20,7 +21,7 @@ const background = () => {
 }
 
 window.addEventListener('scroll', () => {
-    background()
+    document.getElementById('myNavbar') ? background() : window.removeEventListener('scroll', () => {})
 })
 
 const NavBar = () => {

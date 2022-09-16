@@ -42,6 +42,10 @@
     animation: rocketFlying 10s ease-in-out infinite;
 }
 
+.pageLink {
+    text-decoration: none;
+}
+
 @keyframes rotation360 {
     0% {transform: rotate(360deg);}
 }

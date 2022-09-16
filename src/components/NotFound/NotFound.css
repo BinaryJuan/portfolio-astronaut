@@ -1,0 +1,40 @@
+.notFoundContainer {
+    background-color: #302f2f;
+    padding: 100px 0;
+    height: auto;
+    min-height: 100vh;
+}
+
+.notFoundContainer h2 {
+    margin: 0;
+    color: #FFFFFF;
+    font-family: 'SpaceGroteskBold';
+    font-size: 4rem;
+    padding-bottom: 30px;
+}
+
+.messageContainer {
+    background-color: #242323;
+    width: 60%;
+    margin: 0 auto;
+    height: auto;
+    min-height: 700px;
+    padding: 50px;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.notFoundImage {
+    animation: floating 6s infinite ;
+}
+
+.homeLink {
+    color: #FFFFFF;
+    text-decoration: overline;
+    font-family: 'SpaceGroteskMedium';
+    font-size: 2rem;
+}
+
+.spanText {
+    color: #e512ec;
+}
