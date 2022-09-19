@@ -12,6 +12,7 @@
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     height: 500px;
+    padding-top: 120px;
 }
 
 .hGridText {

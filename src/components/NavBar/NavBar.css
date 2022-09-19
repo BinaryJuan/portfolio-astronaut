@@ -30,7 +30,6 @@
 
 .nContainer ul a:hover {
     animation: neonNavbar 3s infinite;
-    cursor: url('../../../public/media/pizza-slice.png') 25 15, auto;
 }
 
 @keyframes neonNavbar {

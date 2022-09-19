@@ -1,0 +1,63 @@
+.projectContainer {
+    width: 60%;
+}
+
+.projectListElement {
+    background-color: #302f2f;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 40px 0 0 0;
+    height: 60px;
+    color: #FFFFFF;
+    border-radius: 1rem;
+    font-family: 'SpaceGroteskBold';
+    padding-left: 30px;
+    z-index: 99;
+    cursor: pointer;
+}
+
+.projectListElement h3 {
+    font-size: 1.4rem;
+}
+
+.projectCheckbox {
+    display: none;
+}
+
+.pDescription {
+    font-family: 'SpaceGroteskRegular';
+    color: #FFFFFF;
+    max-height: 0;
+    overflow: hidden;
+    width: 97.5%;
+    position: relative;
+    padding: 0px;
+    margin-top: -5px;
+    margin-left: .2vw;
+    transition: padding 0.35s ease-in, max-height 0.35s ease-out, opacity 0.55s;
+    background-color: #575555;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    opacity: 0;
+}
+
+.pDescription h4 {
+    margin-bottom: 0;
+}
+
+.projectImage {
+    margin-top: 20px;
+    width: 300px;
+    transition: all .7s;
+}
+
+.projectImage:hover {
+    filter: brightness(70%)
+}
+
+.arrowRight {
+    margin-right: 20px;
+    transition: all .5s;
+}
+

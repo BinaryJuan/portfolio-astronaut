@@ -1,6 +1,5 @@
 import './NavBar.css'
 import { Link } from 'react-scroll'
-import { faWindows } from '@fortawesome/free-brands-svg-icons';
 
 const getScrollPercent = () => {
     let h = document.documentElement, 
@@ -12,7 +11,7 @@ const getScrollPercent = () => {
 
 const background = () => {
     let scrollPercent = getScrollPercent()
-    if (scrollPercent > 35) {
+    if (scrollPercent > 30) {
         document.getElementById('myNavbar').style.background = 'rgba(0, 0, 0, 0.5)'
         document.getElementById('myNavbar').style.borderRadius = '0 0 0 10px'
     } else {

@@ -1,10 +1,11 @@
 // Setup
-import { BrowserRouter, Link, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 // Styles
 import './index.css'
 //Components
 import WebsiteContainer from './components/WebsiteContainer/WebsiteContainer'
 import Projects from './components/Projects/Projects'
+import Videogame from './components/Videogame/Videogame'
 import NotFound from './components/NotFound/NotFound'
 // Fonts - SpaceGrotesk (local)
 import './fonts/space-grotesk/SpaceGrotesk-Light.ttf'
@@ -19,6 +20,7 @@ const App = () => {
         <Routes>
             <Route path='/' element={<WebsiteContainer />} />
             <Route path='/projects' element={<Projects />} />
+            <Route path='/easter-egg' element={<Videogame />} />
             <Route path='*' element={<NotFound errorMessage={'Sorry, but this page does not exist'} />} />
         </Routes>
       </BrowserRouter>

@@ -4,8 +4,8 @@ import NavBar from '../NavBar/NavBar'
 const Header = () => {
     return (
         <div className='hContainer' id='home'>
+            <NavBar />
             <div className='hGrid'>
-                <NavBar />
                 <div className='hImg'><img className='hGridImgMe' src='media/binaryjuan.png' alt='me' /></div>
                 <div className='hGridText'>
                     <h2>I'm Dante Terranova</h2>

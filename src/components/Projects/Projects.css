@@ -1,0 +1,64 @@
+.projectsBackground {
+    background-image: url('../../../public/media/waves.svg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-attachment: fixed;
+}
+
+.alienImage {
+    position: fixed;
+    width: 300px;
+    top: 150px;
+    right: 9vw;
+    animation: floating 5s infinite;
+    z-index: -1;
+}
+
+.projectsContainer {
+    padding: 50px 150px 0 150px;
+    margin: 0px auto 0 auto;
+    min-height: 100vh;
+}
+
+.goHome {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 1.2rem;
+    width: fit-content;
+    font-family: 'SpaceGroteskRegular';
+}
+
+.goHome p {
+    color: #000000;
+    margin: 0;
+}
+
+.arrowLeft {
+    width: 10px;
+    margin-right: 10px;
+}
+
+.projectsContainer h2 {
+    font-family: 'SpaceGroteskBold';
+    font-size: 2.8rem;
+    margin: 0;
+    width: max-content;
+}
+
+.projectsContainer .pcDescription {
+    font-family: 'SpaceGroteskMedium';
+    font-size: 1.5rem;
+    width: 60%;
+    margin-top: 10px;
+}
+
+.projectsContainer a {
+    text-decoration: none;
+}
+
+.projectsList {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 100px;
+}

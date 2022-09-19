@@ -28,25 +28,28 @@ html, body {
     margin: 0;
     scroll-behavior: smooth;
     user-select: none;
-    cursor: url('../public/media/pizza-slice.png') 25 15, auto;
 }
 
 html {
     scrollbar-width: none;
 }
 
-a:hover {
-    cursor: url('../public/media/pizza-slice.png') 25 15, auto;
-}
-
-button:hover {
-    cursor: url('../public/media/pizza-slice.png') 25 15, auto;
-}
-
-span:hover {
-    cursor: url('../public/media/pizza-slice.png') 25 15, auto;
-}
-
 body::-webkit-scrollbar {
     display: none;
+}
+
+.Toastify__toast {
+    background-color: #363636 !important;
+}
+
+.Toastify__toast-body {
+    background-color: #363636;
+    color: #FFFFFF;
+    font-size: 1rem;
+    font-size: bold;
+    font-family: 'SpaceGroteskBold';
+}
+
+.Toastify__progress-bar--success {
+    background-color: #e512ec !important;
 }

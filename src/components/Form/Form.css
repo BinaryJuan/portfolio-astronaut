@@ -34,10 +34,6 @@
     border: 2px solid #e512ec;
 }
 
-.fContainerInput:hover {
-    cursor: url('../../../public/media/pizza-slice.png') 25 15, auto;
-}
-
 .fContainerInput::placeholder {
     font-size: 20px;
 }

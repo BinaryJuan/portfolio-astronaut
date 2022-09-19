@@ -1,8 +1,8 @@
 .notFoundContainer {
     background-color: #302f2f;
-    padding: 100px 0;
+    padding: 9.7vh 0;
     height: auto;
-    min-height: 100vh;
+    max-height: 100vh;
 }
 
 .notFoundContainer h2 {

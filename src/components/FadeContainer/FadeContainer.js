@@ -2,7 +2,7 @@ import './FadeContainer.css'
 import ProjectsPresentation from '../ProjectsPresentation/ProjectsPresentation'
 import Contact from '../Contact/Contact'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faDatabase, faFire, faScrewdriverWrench, faCheckToSlot } from '@fortawesome/free-solid-svg-icons'
+import { faDatabase, faFire, faScrewdriverWrench, faLeaf } from '@fortawesome/free-solid-svg-icons'
 import { faHtml5, faCss3Alt, faSquareJs, faReact, faNodeJs, faGitAlt, faBootstrap, faJava } from '@fortawesome/free-brands-svg-icons'
 
 
@@ -23,7 +23,7 @@ const FadeContainer = () => {
                     <div className='fFlexElement'><FontAwesomeIcon className='fFlexIcon' icon={faBootstrap} title='Bootstrap' /></div>
                     <div className='fFlexElement'><FontAwesomeIcon className='fFlexIcon' icon={faScrewdriverWrench} title='APIs' /></div>
                     <div className='fFlexElement'><FontAwesomeIcon className='fFlexIcon' icon={faJava} title='Java' /></div>
-                    <div className='fFlexElement'><FontAwesomeIcon className='fFlexIcon' icon={faCheckToSlot} title='Testing QA' /></div>
+                    <div className='fFlexElement'><FontAwesomeIcon className='fFlexIcon' icon={faLeaf} title='MongoDB' /></div>
                 </div>
                 <img className='fFlexImg' src='media/ufo.png' alt='UFO' />
             </div>

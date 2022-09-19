@@ -9,7 +9,9 @@ const ProjectsPresentation = () => {
             <div className='ppFlex'>
                 <img className='ppFlexImgMoon' src='media/moon.png' alt='planet' />
                 <img className='ppFlexImgMeteors' src='media/meteors.png' alt='meteors' />
-                <img className='ppFlexImgRocket' src='media/rocket.png' alt='rocket' />
+                <Link to='/easter-egg'>
+                    <img className='ppFlexImgRocket' src='media/rocket.png' alt='rocket' />
+                </Link>
             </div>
         </div>
     )
