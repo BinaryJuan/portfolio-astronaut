@@ -117,10 +117,10 @@
         width: 100%;
         text-align: center;
         font-size: 1rem;
-        margin: -10px 0 0 0;
+        margin: 0;
         border: 1px solid #C126C5;
         border-radius: 1rem;
         padding: 5px;
-        background-color: #8b2c8f;
+        background-color: transparent;
     }
 }
