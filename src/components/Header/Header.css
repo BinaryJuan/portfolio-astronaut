@@ -55,14 +55,48 @@
 
 @media ((min-width: 830px) and (max-width: 1300px)) {
     .hGridImg {
+        width: 500px;
+    }
+
+    .hGridImgMe {
         display: none;
     }
 }
 
-@media ((min-width: 600px) and (max-width: 830px)) {
+@media ((min-width: 830px) and (max-width: 1000px)) {
+    .hGridImg {
+        width: 400px;
+    }
+
+    .hGridImgMe {
+        display: none;
+    }
+
+    .hGridText {
+        padding-top: 150px;
+    }
+
+    .hGridText h2 {
+        font-size: 4rem;
+    }
+
+    .hGridText h3 {
+        font-size: 1.5rem;
+    }
+
+    .nContainer ul li a {
+        font-size: 1.4rem;
+    }
+}
+
+@media ((min-width: 700px) and (max-width: 830px)) {
     .hGrid {
-        display: grid;
-        grid-template-columns: 0.5fr 2fr;
+        display: flex;
+        justify-content: center;
+    }
+
+    .hGridImg {
+        width: 400px;
     }
 
     .hContainer {
@@ -70,28 +104,79 @@
     }
 
     .hGridText {
-        padding-top: 100px;
-        margin-left: -10vw;
+        padding-top: 150px;
+        margin-left: 60px;
     }
 
     .hGridText h2 {
         font-size: 4rem;
     }
-    
+
     .hGridText h3 {
-        font-size: 2rem;
+        font-size: 1.5rem;
+    }
+
+    .nContainer ul li a {
+        font-size: 1.4rem;
+    }
+
+    .hGridImgMe {
+        display: none;
+    }
+}
+
+@media ((min-width: 600px) and (max-width: 700px)) {
+    .hGrid {
+        display: flex;
+        justify-content: center;
+        height: 450px;
     }
 
     .hGridImg {
+        width: 350px;
+        margin-left: 0;
+    }
+
+    .hContainer {
+        min-height: fit-content;
+    }
+
+    .hGridText {
+        padding-top: 150px;
+        margin-left: 60px;
+    }
+
+    .hGridText h2 {
+        font-size: 3.5rem;
+    }
+
+    .hGridText h3 {
+        font-size: 1.3rem;
+    }
+
+    .nContainer ul li a {
+        font-size: 1.3rem;
+    }
+
+    .hGridImg {
+        margin-left: -10px;
+    }
+
+    .hGridImgMe {
         display: none;
     }
 }
 
 @media ((min-width: 500px) and (max-width: 599px)) {
     .hGrid {
-        display: grid;
-        grid-template-columns: 0.5fr 2fr;
-        max-height: 400px;
+        display: flex;
+        justify-content: center;
+        height: 350px;
+    }
+
+    .hGridImg {
+        width: 300px;
+        margin-top: 0;
     }
 
     .hContainer {
@@ -99,74 +184,106 @@
     }
 
     .hGridText {
-        padding-top: 100px;
-        margin-left: -10vw;
+        margin-left: 60px;
+        padding-top: 50px;
     }
 
     .hGridText h2 {
-        font-size: 3rem;
+        font-size: 2.6rem;
     }
-    
+
     .hGridText h3 {
-        font-size: 1.5rem;
+        font-size: 1.1rem;
+        margin-left: 5px;
+    }
+
+    .nContainer ul li a {
+        font-size: 1.3rem;
     }
 
     .hGridImg {
+        margin-left: -10px;
+    }
+
+    .hGridImgMe {
         display: none;
     }
 }
 
 @media ((min-width: 400px) and (max-width: 499px)) {
-    .hContainer {
-        height: auto;
-        min-height: 380px;
+    .hGrid {
+        display: flex;
+        justify-content: center;
+        height: 260px;
     }
 
-    .hGrid {
-        display: grid;
-        grid-template-columns: 0.5fr 2fr;
-        height: auto;
+    .hGridImg {
+        width: 260px;
+        margin-top: 0;
+    }
+
+    .hContainer {
+        min-height: fit-content;
     }
 
     .hGridText {
-        padding-top: 100px;
-        margin-left: -10vw;
+        margin-left: 60px;
+        padding-top: 50px;
     }
 
     .hGridText h2 {
-        font-size: 3rem;
+        font-size: 2rem;
     }
-    
+
     .hGridText h3 {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         margin-left: 5px;
     }
 
     .hGridImg {
-        display: none;
+        margin-left: -10px;
     }
-    
+
     .hGridImgMe {
         display: none;
     }
 }
 
 @media (max-width: 399px) {
-    .hGridImgMe {
-        display: none;
+    .hGrid {
+        display: flex;
+        justify-content: center;
+        height: 200px;
+    }
+
+    .hGridImg {
+        width: 200px;
+        margin-top: 0;
+    }
+
+    .hContainer {
+        min-height: fit-content;
     }
 
     .hGridText {
-        padding-top: 60px;
-        margin-left: -10vw;
+        margin-left: 60px;
+        padding-top: 10px;
     }
 
     .hGridText h2 {
-        font-size: 2rem;
+        font-size: 1.6rem;
     }
-    
+
     .hGridText h3 {
-        font-size: 1rem;
+        font-size: 1.2rem;
         margin-left: 5px;
+    }
+
+    .hGridImg {
+        margin-left: -10px;
+    }
+
+    .hGridImgMe {
+        display: none;
     }
 }

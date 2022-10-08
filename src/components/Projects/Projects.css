@@ -62,3 +62,63 @@
     flex-direction: column;
     padding-bottom: 100px;
 }
+
+@media ((min-width: 600px) and (max-width: 800px)) {
+    .alienImage {
+        width: 200px;
+    }
+
+    .projectsContainer .pcDescription {
+        font-size: 1.2rem;
+        width: 70%;
+        margin-top: 10px;
+    }
+
+    .projectsContainer h2 {
+        font-size: 2.2rem;
+    }
+
+    .projectsContainer {
+        padding: 50px 150px 0 50px;
+    }
+}
+
+@media ((min-width: 450px) and (max-width: 600px)) {
+    .alienImage {
+        display: none;
+    }
+
+    .projectsContainer .pcDescription {
+        font-size: 1.2rem;
+        width: 70%;
+        margin-top: 10px;
+    }
+
+    .projectsContainer h2 {
+        font-size: 2.2rem;
+    }
+
+    .projectsContainer {
+        padding: 50px 150px 0 50px;
+    }
+}
+
+@media (max-width: 450px) {
+    .alienImage {
+        display: none;
+    }
+
+    .projectsContainer .pcDescription {
+        font-size: 1.2rem;
+        width: 70%;
+        margin-top: 10px;
+    }
+
+    .projectsContainer h2 {
+        font-size: 2.2rem;
+    }
+
+    .projectsContainer {
+        padding: 50px 150px 0 50px;
+    }
+}

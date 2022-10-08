@@ -10,6 +10,7 @@ const statusList =
 ]
 
 const Projects = () => {
+
     return (
         <div className='projectsBackground'>
             <div className='projectsContainer'>
@@ -22,7 +23,7 @@ const Projects = () => {
                 <p className='pcDescription'>
                     This section exhibits some of my main projects, which helped me build my
                     knowledge in the web development area. To see other projects, just visit
-                    my <span><a className='spanPurple' href='https://github.com/BinaryJuan' target='_blank'>Github</a></span> user!
+                    my <span><a className='spanPurple' href='https://github.com/BinaryJuan' target='_blank' rel="noreferrer">Github</a></span> user!
                 </p>
                 <div className='projectsList'>
                     <Project pname='Quinta Silveria' pdescription='A web designed using principally HTML, CSS and Javascript made for clients in El Salvador' pid='1' ppid='p1' arrow='a1' techs={['HTML', 'CSS', 'JS', 'Bootstrap']} status={statusList[0]} img='https://i.imgur.com/vwWDJRD.jpg' link='http://quintasilveria.com/' />

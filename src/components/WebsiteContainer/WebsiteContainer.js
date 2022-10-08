@@ -4,7 +4,7 @@ import FadeContainer from '../FadeContainer/FadeContainer'
 
 const WebsiteContainer = () => {
     return (
-        <div>
+        <div className='websiteContainer'>
             <Header />
             <Presentation />
             <FadeContainer />

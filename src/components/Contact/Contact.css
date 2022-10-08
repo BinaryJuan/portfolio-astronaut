@@ -19,7 +19,7 @@
 }
 
 .sFlexElement {
-    background-color: #000000;
+    background-color: #363636;
     width: 75px;
     height: 75px;
     margin-right: 25px;
@@ -38,4 +38,32 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: 1000px;
+}
+
+@media (max-width: 600px) {
+    .groundSurface {
+        background-image: none;
+        height: 0;
+    }
+}
+
+@media (max-width: 536px) {
+    .cContainer h2 {
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .cContainer h3 {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .socialFlex {
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    .sFlexElement {
+        margin: 20px;
+    }
 }

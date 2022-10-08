@@ -86,3 +86,61 @@
 .formButton:active {
     font-size: 1.4rem;
 }
+
+@media ((min-width: 1200px) and (max-width: 1500px)) {
+    .formContainer {
+        min-width: 450px;
+    }
+}
+
+@media ((min-width: 1000px) and (max-width: 1200px)) {
+    .formContainer {
+        min-width: 450px;
+    }
+
+    .formImg {
+        margin-left: 8vw;
+    }
+}
+
+@media ((min-width: 900px) and (max-width: 1000px)) {
+    .formContainer {
+        min-width: 450px;
+    }
+
+    .formImg {
+        width: 300px;
+        height: 300px;
+        margin-left: 8vw;
+    }
+}
+
+@media ((min-width: 536px) and (max-width: 900px)) {
+    .formContainer {
+        min-width: 450px;
+    }
+
+    .formImg {
+        display: none;
+    }
+}
+
+@media (max-width: 536px) {
+    .formContainer {
+        width: 80%;
+        margin: 20px 0;
+    }
+
+    .formImg {
+        display: none;
+    }
+
+    .formFlex {
+        justify-content: center;
+    }
+
+    .cContainer h2 {
+        padding-left: 0;
+        text-align: center;
+    }
+}

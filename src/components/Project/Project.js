@@ -44,7 +44,7 @@ const Project = ({ pname, techs, pdescription, pid, ppid, status, img, link, arr
                     })}
                 </ul>
                 <h4>Status: <span style={statusColor}>{status.status}</span></h4>
-                <a href={link} target='_blank'>
+                <a href={link} target='_blank' rel="noreferrer">
                     <img className='projectImage' src={img} alt={pname} title='Click me :)' />
                 </a>
             </div>

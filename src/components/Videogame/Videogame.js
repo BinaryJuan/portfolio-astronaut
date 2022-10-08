@@ -86,6 +86,7 @@ const Videogame = () => {
         if (userWinner === 'tied') {
             let pos = randomIntFromInterval(0, 8)
             let written = false
+            let option
             if (!allPosFilled) {
                 while (!written) {
                     let square = document.getElementById(pos)
@@ -98,7 +99,13 @@ const Videogame = () => {
                         posFilled()
                     }
                     else {
-                        pos = randomIntFromInterval(0, 8)
+                        option = randomIntFromInterval(1, 2)
+                        if (option === 1) {
+                            pos = randomIntFromInterval(0, 8)
+                        }
+                        else {
+                            pos = randomIntFromInterval(0, 8)
+                        }
                     }
                 }
                 setPlayerTurn(true)

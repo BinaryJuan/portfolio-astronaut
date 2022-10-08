@@ -198,3 +198,32 @@
         transform: translate3d(0, 0, 1px) rotate(360deg);
     }
 }
+
+@media ((min-width: 400px) and (max-width: 600px)) {
+    .boardPosition {
+        width: 60px;
+        height: 60px;
+        margin: 20px;
+    }
+
+    .videogame h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .boardPosition {
+        width: 50px;
+        height: 50px;
+        margin: 15px;
+    }
+
+    .videogame h2 {
+        font-size: 2rem;
+    }
+
+    .scoreFlex {
+        flex-direction: column;
+        align-items: center;
+    }
+}

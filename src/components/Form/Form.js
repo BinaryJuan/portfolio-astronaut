@@ -20,7 +20,9 @@ const Form = () => {
                 icon: '🚀'
             })
         })
-        .catch(() => {
+        .catch((err) => {
+            console.log(err)
+            document.getElementById('sendButton').innerHTML = 'Send'
             toast.error('Error sending e-mail', {
                 position: toast.POSITION.BOTTOM_RIGHT,
                 closeOnClick: true,
