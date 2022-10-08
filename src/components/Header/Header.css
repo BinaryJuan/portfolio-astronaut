@@ -253,7 +253,7 @@
     .hGrid {
         display: flex;
         justify-content: center;
-        height: 200px;
+        height: 210px;
     }
 
     .hGridImg {
