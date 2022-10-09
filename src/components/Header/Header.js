@@ -1,10 +1,33 @@
 import './Header.css'
 import NavBar from '../NavBar/NavBar'
+import { useEffect } from 'react';
 
 const Header = () => {
+    useEffect(() => {
+        const stars = document.getElementsByClassName('shootingStar')
+        console.log(stars)
+        stars[0].addEventListener('animationiteration', () => {randomizeStars(0, stars)})
+        stars[1].addEventListener('animationiteration', () => {randomizeStars(1, stars)})
+    }, []);
+
+    const randomizeStars = (nStar, stars) => {
+        let top = Math.floor(Math.random() * (700 - 100 + 1) + 100)
+        top = `${top}px`
+        console.log(top)
+        stars[nStar].style.top = top
+    }
+
     return (
         <div className='hContainer' id='home'>
             <NavBar />
+            <div>
+                <span className='shootingStar'>
+                    <span className='starTail'></span>
+                </span>
+                <span className='shootingStar'>
+                    <span className='starTail'></span>
+                </span>
+            </div>
             <div className='hGrid'>
                 <div className='hImg'><img className='hGridImgMe' src='media/binaryjuan.png' alt='me' /></div>
                 <div className='hGridText'>
