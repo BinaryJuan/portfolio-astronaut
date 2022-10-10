@@ -6,6 +6,7 @@ import './index.css'
 import WebsiteContainer from './components/WebsiteContainer/WebsiteContainer'
 import Projects from './components/Projects/Projects'
 import Videogame from './components/Videogame/Videogame'
+import ScrollToTop from './components/ScrollToTop/ScrollToTop'
 import NotFound from './components/NotFound/NotFound'
 // Fonts - SpaceGrotesk (local)
 import './fonts/space-grotesk/SpaceGrotesk-Light.ttf'
@@ -17,6 +18,7 @@ const App = () => {
   return (
     <div className='App'>
       <BrowserRouter>
+        <ScrollToTop />
         <Routes>
             <Route path='/' element={<WebsiteContainer />} />
             <Route path='/projects' element={<Projects />} />

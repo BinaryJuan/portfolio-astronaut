@@ -7,11 +7,12 @@ const Presentation = () => {
                 <div className='fElement fImg'><img className='pImage' src='media/satellite.png' alt='satellite' /></div>
                 <div className='fElement'>
                     <p className='pText'>
-                        My name is Dante Terranova, i am a 21 year old programmer who is passionate for the IT field,
-                        more specifically in the website development area as a full-stack developer.
-                        My main knowledge encompasses both Frontend and Backend, although i am an 'always learning'
-                        individual. My native language is Spanish, but i have an advanced level of English which
-                        makes me able to communicate efficiently 
+                        My name is Dante Terranova, i am a programmer who is passionate for the IT field,
+                        more specifically into developing desktop applications, websites and databases.
+                        I consider myself a skillful individual at problem solving and would be interested
+                        in new challenges.
+                        My native language is Spanish, although i have an advanced level of English which
+                        makes me able to communicate efficiently and adapt to different scenarios
                     </p>
                 </div>
             </div>

@@ -69,7 +69,8 @@
 
 @media ((min-width: 300px) and (max-width: 800px)) {
     .pDescription {
-        width: 95%;
+        width: 93%;
+        margin-left: 5px;
     }
 
     .projectsContainer {
