@@ -4,14 +4,12 @@ import { useEffect } from 'react';
 
 const Header = () => {
     useEffect(() => {
-        console.log('lag')
         const stars = document.getElementsByClassName('shootingStar')
         stars[0].addEventListener('animationiteration', () => {randomizeStars(0, stars)})
         stars[1].addEventListener('animationiteration', () => {randomizeStars(1, stars)})
     }, [])
 
     const randomizeStars = (nStar, stars) => {
-        console.log('entre')
         let top = Math.floor(Math.random() * (700 - 100 + 1) + 100)
         top = `${top}px`
         stars[nStar].style.top = top

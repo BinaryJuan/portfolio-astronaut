@@ -1,0 +1,23 @@
+.scrollTopButton {
+    position: fixed;
+    bottom: 30px;
+    right: 0px;
+}
+
+.scrollTopButton img {
+    width: 100px;
+    height: 100px;
+}
+
+@media ((min-width: 900px) and (max-width: 1410px)) {
+    .scrollTopButton img {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+@media (max-width: 899px) {
+    .scrollTopButton {
+        display: none;
+    }
+}

@@ -27,7 +27,7 @@ const FadeContainer = () => {
                 </div>
                 <img className='fFlexImg' src='media/ufo.png' alt='UFO' />
             </div>
-            <a href='media/cv-terranova-english.pdf' target='_blank' className='fCv'>Inspect CV</a>
+            <a href='https://pdfhost.io/v/AuTOV043X_cvterranovaenglish' target='_blank' rel='noreferrer' className='fCv'>Inspect CV</a>
             <ProjectsPresentation />
             <Contact />
         </div>
