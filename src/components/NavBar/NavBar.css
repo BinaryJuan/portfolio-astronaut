@@ -39,8 +39,15 @@
 }
 
 @media ((min-width: 0px) and (max-width: 600px)) {
+    .nContainer {
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+
     .nContainer ul {
         justify-content: center;
+        padding: 0 0 0 2px;
     }
 }
 
