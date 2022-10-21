@@ -1,6 +1,6 @@
 import './Header.css'
 import NavBar from '../NavBar/NavBar'
-import { useEffect } from 'react';
+import { useEffect } from 'react'
 
 const Header = () => {
     useEffect(() => {
