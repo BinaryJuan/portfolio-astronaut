@@ -1,9 +1,8 @@
 .hContainer {
-    background-image: url('../../../public/media/background.png');
-    background-size: contain;
     min-height: 800px;
     height: auto;
     position: relative;
+    background-repeat: no-repeat;
 }
 
 .hGrid {
@@ -13,7 +12,7 @@
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     height: 500px;
-    padding-top: 120px;
+    padding-top: 70px;
 }
 
 .hGridText {
@@ -26,6 +25,10 @@
     color: white;
     font-size: 5rem;
     margin: 0;
+    text-shadow: 
+        0 2px 1px #9b15aa, 
+        -1px 3px 1px #9c12a3, 
+        -2px 5px 1px #9e22a5;
 }
 
 .hGridText h3 {
@@ -33,13 +36,53 @@
     color: #C126C5;
     font-size: 2rem;
     margin: 10px 0 0 20px;
-    animation: neon 4s infinite;
+    text-shadow: #d166d4 0 0 25px;
+}
+
+.hSocials {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 20px 0 0 20px;
+    height: auto;
+}
+
+.hSocials div {
+    width: 60px;
+    height: 60px;
+    background: rgba(7, 0, 0, 0.34);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.6px);
+    -webkit-backdrop-filter: blur(5.6px);
+    border: 1px solid rgba(7, 0, 0, 0.06);
+    margin: 0 10px 0 0;
+    transition: all .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: #e4d8e4ad;
+}
+
+.hSocials div:hover {
+    color: #FFFFFF;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.6px);
+    -webkit-backdrop-filter: blur(5.6px);
+    border: 1px solid rgba(7, 0, 0, 0.06);
+    transform: scale(1.2);
+    background-image: linear-gradient(to right bottom, #542176, #642081, #751d8c, #881696, #9b069f);
+    box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75);
+    transition: all .5s;
 }
 
 .hGridImg {
     margin: 100px 0 0 -15vw;
     width: 650px;
-    animation: floating 4s infinite;
+    animation: floating 5s infinite;
 }
 
 .shootingStar:nth-child(1) {
@@ -50,7 +93,7 @@
     background-color: #FFFFFF;
     left: -100px;
     top: 100px;
-    animation: shootingStar 5s ease-out 3s infinite;
+    animation: shootingStar 5s ease-out infinite;
 }
 
 .shootingStar:nth-child(2) {
@@ -62,7 +105,7 @@
     right: -100px;
     rotate: 180deg;
     top: 250px;
-    animation: shootingStarInv 5s ease-out 6s infinite;
+    animation: shootingStarInv 5s ease-out 4s infinite;
 }
 
 .starTail {
@@ -88,15 +131,9 @@
     100% {transform: translate(100vw, -100px) rotate(-20deg); opacity: 0;}
 }
 
-@keyframes neon {
-    0% {text-shadow: #d166d4 0 0 12px}
-    50% {text-shadow: #d166d4 0 0 36px}
-    100% {text-shadow: #d166d4 0 0 12px}
-}
-
 @keyframes floating {
     0% {transform: translateY(-25px);}
-    50% {transform: translateY(-50px);}
+    50% {transform: translateY(-60px);}
     100% {transform: translateY(-25px);}
 }
 
@@ -104,19 +141,11 @@
     .hGridImg {
         width: 500px;
     }
-
-    .hGridImgMe {
-        display: none;
-    }
 }
 
 @media ((min-width: 830px) and (max-width: 1000px)) {
     .hGridImg {
         width: 400px;
-    }
-
-    .hGridImgMe {
-        display: none;
     }
 
     .hGridText {
@@ -166,10 +195,6 @@
     .nContainer ul li a {
         font-size: 1.4rem;
     }
-
-    .hGridImgMe {
-        display: none;
-    }
 }
 
 @media ((min-width: 600px) and (max-width: 700px)) {
@@ -207,10 +232,6 @@
 
     .hGridImg {
         margin-left: -10px;
-    }
-
-    .hGridImgMe {
-        display: none;
     }
 }
 
@@ -251,10 +272,6 @@
     .hGridImg {
         margin-left: -10px;
     }
-
-    .hGridImgMe {
-        display: none;
-    }
 }
 
 @media ((min-width: 400px) and (max-width: 499px)) {
@@ -290,10 +307,6 @@
     .hGridImg {
         margin-left: -10px;
     }
-
-    .hGridImgMe {
-        display: none;
-    }
 }
 
 @media (max-width: 399px) {
@@ -328,9 +341,5 @@
 
     .hGridImg {
         margin-left: -10px;
-    }
-
-    .hGridImgMe {
-        display: none;
     }
 }

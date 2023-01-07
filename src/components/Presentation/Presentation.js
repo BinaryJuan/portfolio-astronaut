@@ -11,7 +11,7 @@ const Presentation = () => {
                         more specifically into developing desktop applications, websites and databases.
                         I consider myself a skillful individual at problem solving and would be interested
                         in new challenges.
-                        My native language is Spanish, although i have an advanced level of English (C1 Advanced) which
+                        My native language is Spanish, although i have a C1 Advanced level of English, which
                         makes me able to communicate efficiently and adapt to different scenarios
                     </p>
                 </div>

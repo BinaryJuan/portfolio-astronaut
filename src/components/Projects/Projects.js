@@ -18,7 +18,7 @@ const Projects = () => {
                     <img className='arrowLeft' src='media/arrow-left.svg' alt='arrow-left' />
                     <p>Go <span className='spanPurple'> home</span></p>
                 </Link>
-                <h2>Projects</h2>
+                <h2>PROJECTS</h2>
                 <p className='pcDescription'>
                     This section exhibits some of my main projects, which helped me build my
                     knowledge in the web development area. To see other projects, just visit

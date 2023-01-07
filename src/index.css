@@ -30,30 +30,21 @@ html, body {
     user-select: none;
 }
 
+body {
+    background-image: linear-gradient(to bottom, #3e0350, #4e0e69, #481466, #300e49, #31174c, #32184d, #32184f, #331950, #4e2371, #6c2b93, #8e32b5, #b336d6);
+    background-size: cover;
+    overflow-x: hidden;
+}
+
 html {
     scrollbar-width: none;
 }
 
 .websiteContainer {
     overflow: hidden;
+    height: 3400px;
 }
 
 body::-webkit-scrollbar {
     display: none;
-}
-
-.Toastify__toast {
-    background-color: #363636 !important;
-}
-
-.Toastify__toast-body {
-    background-color: #363636;
-    color: #FFFFFF;
-    font-size: 1rem;
-    font-size: bold;
-    font-family: 'SpaceGroteskBold';
-}
-
-.Toastify__progress-bar--success {
-    background-color: #e512ec !important;
 }

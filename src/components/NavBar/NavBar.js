@@ -12,7 +12,7 @@ const NavBar = () => {
                         smooth={true}
                         offset={50}
                         duration={500}>
-                        Home
+                        HOME
                     </Link>
                 </li>
                 <li>
@@ -22,7 +22,7 @@ const NavBar = () => {
                         smooth={true}
                         offset={50}
                         duration={500}>
-                        Skills
+                        SKILLS
                     </Link>
                 </li>
                 <li>
@@ -32,18 +32,18 @@ const NavBar = () => {
                         smooth={true}
                         offset={50}
                         duration={500}>
-                        Projects
+                        PROJECTS
                     </Link>
                 </li>
                 <li>
-                    <Link 
-                        to="contact" 
-                        spy={true} 
-                        smooth={true}
-                        offset={50}
-                        duration={500}>
-                        Contact
-                    </Link>
+                    <input type="checkbox" id="toggleLanguage" />
+                    <label id='labelToggleLanguage' htmlFor="toggleLanguage">
+                        <span className='spanToggleLanguage'>ES</span>
+                        <span className='spanToggleLanguage'>EN</span>
+                        <span className='sliderLanguage'>
+                            <span className='sliderLanguageCircle'></span>
+                        </span>
+                    </label>
                 </li>
             </ul>
         </nav>

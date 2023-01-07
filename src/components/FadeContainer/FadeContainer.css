@@ -1,6 +1,5 @@
 .fadeContainer {
-    height: 2700px;
-    background: linear-gradient(180deg, #160429 1.5%, rgba(57, 3, 115, 0.488403) 23.18%, rgba(255, 255, 255, 0) 38%);
+    height: 1700px;
     overflow: hidden;
 }
 
@@ -10,15 +9,18 @@
     color: #FFFFFF;
     font-family: 'SpaceGroteskBold';
     font-size: 2.3rem;
+    text-shadow: 
+        0 2px 1px #a11bb1, 
+        -1px 3px 1px #b321bc, 
+        -2px 5px 1px #ad2ab4;
 }
 
 .fFlexContainer {
     display: flex;
     width: 100%;
     flex-wrap: wrap;
-    height: auto;
+    height: 500px;
     align-items: center;
-    max-height: 400px;
     overflow: hidden;
     margin-bottom: 30px;
 }
@@ -51,43 +53,312 @@
 }
 
 .fFlexIcon {
+    color: #b139c9;
     transition: all 1s;
 }
 
-.fFlexIcon:hover {
-    color: #be2cdb;
-}
-
-.fFlexImg {
-    width: 400px;
-    margin-left: 10vw;
-    animation: ufo 8s infinite;
-}
-
 .fCv {
+    color: #fff;
     text-decoration: none;
-    color: #000000;
+    font-size: 1.5rem;
     font-family: 'SpaceGroteskBold';
-    font-size: 1.3rem;
-    padding: 20px 30px;
-    border: 2px solid #b439d3;
-    border-radius: .7rem;
-    position: relative;
-    transition: .8s;
-    margin-left: 5vw;
+    border: 2px solid #b139c9;
+    padding: 5px 10px;
+    box-shadow: -1px 1px #b139c9, -2px 2px #b139c9, -3px 3px #b139c9, -4px 4px #b139c9, -5px 5px #b139c9;
+    transition: all .3s;
+    border-radius: .5rem;
+    width: fit-content;
+    backdrop-filter: blur(3px);
 }
 
 .fCv:hover {
-    color: #FFFFFF;
-    box-shadow: inset 0 0 0 2.5rem #b439d3;
+    margin-left: 15px;
 }
 
-@keyframes ufo {
-    0% {transform: translate(0px, 0px);}
-    25% {transform: translate(80px, -70px);}
-    50% {transform: translate(150px, 30px);}
-    80% {transform: translate(-100px, -40px);}
-    100% {transform: translate(0px, 0px);}
+.skillsOrbit {
+    position: relative;
+    height: 500px;
+    margin-top: 40px;
+    margin-right: 400px;
+    margin-left: 10%;
+    transform: skew(15deg, 15deg);
+}
+
+.circleOrbit {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 150px;
+    min-height: 150px;
+    border-radius: 100%;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.smallCircle {
+    top: 100px;
+    left: 100px;
+    animation: linear 24s infinite orbit;
+}
+
+.mediumCircle {
+    width: 250px;
+    height: 250px;
+    top: 50px;
+    left: 50px;
+    animation: linear 30s infinite orbit;
+}
+
+.bigCircle {
+    width: 350px;
+    height: 350px;
+    top: 0;
+    left: 0;
+    animation: linear 35s infinite orbit;
+}
+
+.bigCircle .skillPlanet:nth-child(1) {
+    top: 1%;
+    left: 70%;
+}
+
+
+.bigCircle .skillPlanet:nth-child(2) {
+    top: 70%;
+    left: -3%;
+}
+
+.bigCircle .skillPlanet:nth-child(3) {
+    top: 30%;
+    left: 84%;
+}
+
+.mediumCircle .skillPlanet:nth-child(1) {
+    top: 76%;
+    left: 50%;
+}
+
+.mediumCircle .skillPlanet:nth-child(2) {
+    top: 16%;
+    left: 77%;
+}
+
+.mediumCircle .skillPlanet:nth-child(3) {
+    top: -18%;
+    left: 40%;
+}
+
+.smallCircle .skillPlanet:nth-child(1) {
+    top: 50%;
+    left: 50%;
+}
+
+.smallCircle .skillPlanet:nth-child(2) {
+    top: -30%;
+    left: 5%;
+}
+
+.smallIcon {
+    background-color: #000000;
+    padding: 3px;
+    border-radius: .6rem;
+}
+
+.smallIcon:nth-child(1) {
+    position: absolute;
+    left: 78%;
+    top: 10%;
+}
+
+.smallIcon:nth-child(2) {
+    position: absolute;
+    left: 45%;
+    top: 86%;
+}
+
+.smallIcon:nth-child(3) {
+    position: absolute;
+    left: 5%;
+    top: 0;
+}
+
+.sun {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    transform: skew(-15deg, -15deg) rotate(45deg);
+    top: 100px;
+    left: 135px;
+    z-index: 1;
+    background: radial-gradient(circle at 100px 100px, #ca7e0b, rgb(243, 209, 15));
+    box-shadow: -1px -1px 40px 13px rgba(247, 239, 125, 0.829);
+    -webkit-box-shadow: -1px -1px 40px 13px rgba(247, 239, 125, 0.829);
+    -moz-box-shadow: -1px -1px 40px 13px rgba(247, 239, 125, 0.829);
+    text-align: center;
+}
+
+.sun span {
+    color: #f0690f;
+    font-size: 1.2rem;
+    font-family: 'SpaceGroteskBold';
+    position: relative;
+    top: 45px;
+}
+
+.flexSkillsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 22%;
+}
+
+.flexSkillsList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 33vw;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(177, 57, 201, 0.1);
+    padding: 15px 20px;
+    border-radius: .6rem;
+    position: relative;
+}
+
+.flexSkillsList h3 {
+    position: absolute;
+    font-family: 'SpaceGroteskBold';
+    color: #fff;
+    top: -48px;
+    font-size: 1.3rem;
+}
+
+.skill {
+    font-size: 4rem;
+    color: #fff;
+    margin: 10px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(2px);
+    border-radius: 0.5rem;
+    box-shadow: 0px 1rem 2rem rgba(0, 0, 0, 0.1);
+    transition: transform 250ms ease-out;
+    overflow: hidden;
+    width: 70px;
+    height: 70px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.skill::before {
+    content: '';
+    background: rgba(255, 255, 255, 0.3);
+    width: 60%;
+    height: 100%;
+    top: 0%;
+    left: -125%;
+    transform: skew(45deg);
+    position: absolute;
+    transition: left 500ms ease-out;
+}
+
+.skill:hover {
+    transform: translateY(-10%);
+}
+
+.skill:hover::before {
+    left: 150%;
+}
+
+.skillPlanet {
+    background-color: #000;
+    font-size: 2rem;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #3d3d3dc2;
+    z-index: 10;
+    position: absolute;
+}
+
+.orangePlanet {
+    background: radial-gradient(circle at 40px 85px, #000, #d48113);
+    box-shadow: 0px 0px 5px 1px #d48113;
+}
+
+.bluePlanet {
+    background: radial-gradient(circle at 40px 85px, #000, #257ac0);
+    box-shadow: 0px 0px 5px 1px #2175b9;
+}
+
+.redPlanet {
+    background: radial-gradient(circle at 40px 85px, #000, #a31515);
+    box-shadow: 0px 0px 5px 1px #a31515;
+}
+
+.purplePlanet {
+    background: radial-gradient(circle at 40px 85px, #000, #9731ac);
+    box-shadow: 0px 0px 5px 1px #9731ac;
+}
+
+.greenPlanet {
+    background: radial-gradient(circle at 40px 85px, #000, #1a9c1a);
+    box-shadow: 0px 0px 5px 1px #1a9c1a;
+}
+
+.rotateSlow {
+    animation: rotate 30s linear infinite;
+}
+
+.skillPlanet .planetShadow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 50% 50%, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1) 40%, rgba(0, 0, 0, 0) 50%);
+    transform: rotateX(90deg) translateZ(-150px); 
+}
+
+.orbitMeteors {
+    position: absolute;
+    background-color: transparent;
+    border: 3px solid transparent;
+    border-top: 0;
+    border-bottom: 2px solid aliceblue;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    width: 44px;
+    height: 2px;
+    transform: rotateZ(30deg);
+}
+
+@keyframes orbit {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 @media ((min-width: 1342px) and (max-width: 1470px)) {
@@ -119,10 +390,6 @@
         height: 80px;
         font-size: 3.5rem;
     }
-
-    .fCv {
-        font-size: 1.1rem;
-    }
 }
 
 @media ((min-width: 900px) and (max-width: 1000px)) {
@@ -132,10 +399,6 @@
 
     .fFlexImg {
         display: none;
-    }
-
-    .fCv {
-        font-size: 1.1rem;
     }
 }
 
@@ -157,10 +420,6 @@
     .fFlexImg {
         display: none;
     }
-
-    .fCv {
-        font-size: 1.1rem;
-    }
 }
 
 @media ((min-width: 470px) and (max-width: 600px)) {
@@ -181,10 +440,6 @@
 
     .fFlexImg {
         display: none;
-    }
-
-    .fCv {
-        font-size: .9rem;
     }
 }
 
@@ -211,15 +466,6 @@
 
     .fFlexImg {
         display: none;
-    }
-
-    .fCv {
-        font-size: .9rem;
-        display: inline-block;
-        width: 40%;
-        margin: 0 0 0 23%;
-        text-align: center;
-        padding: 15px 25px;
     }
 }
 
